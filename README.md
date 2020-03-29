@@ -7,5 +7,5 @@ SD.h
 -------------------------------
 PUBLIC FUNCTIONS:
 void playMIDI(FILE file, int pin) -> Start playing the song in the specified MIDI file on the specified pin
-void stop()                       -> Stops the song from playing, but it does not close the file. The song can still be resumed after
+void stop()                       -> Stops the song from playing, but it does not close the file. The song can still be resumed after.
 void start()                      -> Resumes the song from where it stopped after stop() had been invoked
