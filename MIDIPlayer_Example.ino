@@ -9,7 +9,6 @@ int pin = 9;
 
 void setup()
 {
-  Serial.begin(9600);
   SD.begin(4);
   file = SD.open(songName);
   midi.playMIDI(file, pin);
@@ -18,6 +17,8 @@ void setup()
 
 void loop()
 {
+  //Basic HIGH/LOW loop on a different pin to show its "multitasking" interrupt abilities
+  //The song and this loop do not typically affect each other
   delay(1000);
   digitalWrite(3, HIGH);
   delay(200);
